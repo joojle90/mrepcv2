@@ -1,0 +1,26 @@
+<!--
+<ion-tabs>
+  <ion-tab *ngFor="#tc of tabcontent;" id="{{tc.tabroot}}" [root]="root" tabTitle={{tc.tabtitle}} tabIcon={{tc.tabicon}}>
+  </ion-tab>
+</ion-tabs>
+-->
+<ion-navbar secondary *navbar>
+    <ion-title>Marketplace</ion-title>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-buttons end>
+        <button (click)="useraccount()">
+            <ion-icon ios="ios-person" md="md-person"></ion-icon>
+        </button>
+    </ion-buttons>
+</ion-navbar>
+
+<ion-searchbar primary placeholder="Search"></ion-searchbar>
+<ion-content>
+    <ion-tabs class="marketplace">
+        <ion-tab [root]="tab1Root" tabTitle="By Product" tabIcon="briefcase"></ion-tab>
+        <ion-tab [root]="tab2Root" tabTitle="By Suplier name" tabIcon="people"></ion-tab>
+    </ion-tabs>
+</ion-content>

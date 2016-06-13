@@ -1,0 +1,32 @@
+.tradeshows {
+    ion-card.adv-map p {
+        font-size: 0.7em !important;
+    }
+    ion-label {
+        margin:13px 8px 8px 0;
+    }
+    button[fab].fab-map {
+        top: calc(100% - 35px);
+        z-index: 50;
+    }
+    .item-bold {
+        font-weight: bold;
+
+        span {
+            color: black;
+        }
+    }
+    .eventdesc {
+        font-size:11px;
+
+        [item-left] {
+            margin: 9px 4px 9px 0;
+        }
+    }
+    .item {
+        padding-left: 10px;
+    }
+    .item-inner {
+        margin-left: 5px !important;
+    }
+}

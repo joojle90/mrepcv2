@@ -1,0 +1,20 @@
+<ion-content class="home">
+    <ion-card class="events" *ngFor="let mm of mastermenulist; let i = index">
+        <ion-slides pager *ngIf="i==0">
+            <ion-slide *ngFor="let me of mrepceventslist; let i = index">
+                <a clear (click)="eventdetail(mrepceventslist[i])">
+                    <img [src]="mrepceventslist[i].image" />
+                    <p class="events-title" style="color: #a8f300 !important">{{me.eventdetail[0].name}}</p>
+                    <p class="events-subtitle">{{me.eventdetail[0].startdate}}</p>
+                </a>
+            </ion-slide>
+        </ion-slides>
+        <a clear (click)="eventdetail(mastermenulist[i].action)">
+            <div *ngIf="i!=0">
+                <img [src]="mastermenulist[i].image" />
+            </div>
+            <p class="events-title">{{mm.featuredmenu}}</p>
+            <p class="events-subtitle">{{mm.desc}}</p>
+        </a>
+    </ion-card>
+</ion-content>
