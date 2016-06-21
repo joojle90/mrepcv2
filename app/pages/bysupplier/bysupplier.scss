@@ -1,0 +1,14 @@
+.bysupplier {
+    ion-item {
+        ion-avatar {
+            min-width: 7em;
+            min-height: 7em;
+
+            img {
+                max-width: 6em;
+                max-height: 6em;
+                margin-top: 40%;
+            }
+        }
+    }
+}

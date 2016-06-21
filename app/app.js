@@ -26,6 +26,10 @@ import {
     TradeshowsPage
 }
 from './pages/tradeshows/tradeshows';
+import {
+    MarketplacePage
+}
+from './pages/marketplace/marketplace';
 /*import {
     PlayvideoPage
 }
@@ -108,7 +112,7 @@ class MrepcApp {
 
             var sidemenudata = [];
             var sideitems = {};
-            var classcomps = [HomePage, TradeshowsPage];
+            var classcomps = [HomePage, TradeshowsPage, MarketplacePage];
             var j = 0;
             var count;
 

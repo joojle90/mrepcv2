@@ -8705,21 +8705,23 @@ body {
   text-align: center !important; }
 
 .home ion-card {
-  margin: 3px 10px 3px 10px; }
+  margin: 3px 10px 3px 0px;
+  width: 100%; }
   .home ion-card img {
-    -webkit-filter: brightness(80%);
-    filter: brightness(80%); }
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%); }
   .home ion-card p.events-title {
     position: absolute;
-    top: 32%;
-    font-size: 2.0em;
+    top: 40%;
+    font-size: 2.2em;
     width: 100%;
     font-weight: bold;
-    color: white !important; }
+    color: white !important;
+    text-transform: uppercase; }
   .home ion-card p.events-subtitle {
     font-size: 1.0em;
     position: absolute;
-    top: 50%;
+    top: 60%;
     width: 100%;
     font-weight: bold;
     color: #FFF23D !important; }
@@ -8772,35 +8774,17 @@ body {
 .marketplace-page ion-searchbar {
   padding: 0; }
 
-.byproduct .events {
-  position: relative;
-  text-align: center !important; }
+.byproduct ion-item ion-avatar {
+  min-width: 7em;
+  min-height: 7em; }
+  .byproduct ion-item ion-avatar img {
+    max-width: 6em;
+    max-height: 6em; }
 
-.byproduct ion-card {
-  margin: 3px 10px 3px 10px; }
-  .byproduct ion-card img {
-    -webkit-filter: brightness(80%);
-    filter: brightness(80%); }
-  .byproduct ion-card p.events-title {
-    position: absolute;
-    top: 32%;
-    font-size: 2.0em;
-    width: 100%;
-    font-weight: bold;
-    color: white !important; }
-  .byproduct ion-card p.events-subtitle {
-    font-size: 1.0em;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    font-weight: bold;
-    color: #FFF23D !important; }
-  .byproduct ion-card button.events-details {
-    position: absolute;
-    bottom: 0;
-    font-size: 0.8em;
-    width: 25%;
-    right: 0.4em; }
-
-.byproduct .swiper-pagination-bullet {
-  background: white; }
+.bysupplier ion-item ion-avatar {
+  min-width: 7em;
+  min-height: 7em; }
+  .bysupplier ion-item ion-avatar img {
+    max-width: 6em;
+    max-height: 6em;
+    margin-top: 40%; }

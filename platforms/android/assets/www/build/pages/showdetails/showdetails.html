@@ -1,0 +1,59 @@
+<!--
+  Generated template for the PlayvideoPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-navbar secondary *navbar>
+    <ion-title>Event Details</ion-title>
+
+    <ion-buttons end>
+        <button (click)="presentActionSheet()">
+            <ion-icon ios="ios-share-alt" md="md-share-alt"></ion-icon>
+        </button>
+    </ion-buttons>
+</ion-navbar>
+
+<ion-content class="eventdetail">
+    <ion-card>
+        <div class="logo">
+          <img [src]="geteventdetails.evenpic">
+        </div>
+        <ion-card-content>
+            <h1 class="card-title">
+                {{geteventdetails.eventdetails.name}}
+            </h1>
+
+            <ion-row *ngFor="let es of eventselected; let i = index;" style="margin-top: 10px;">
+                <ion-col *ngIf="es.itemdesc != undefined">
+                    <ion-icon [name]='es.itemicon'></ion-icon>
+                    {{es.itemdesc}}
+                </ion-col>
+                <ion-col *ngIf="es.itemdesc != undefined">
+                    <p>{{es.item}}</p>
+                </ion-col>
+            </ion-row>
+            <h5 class="desc">
+                Description
+            </h5>
+            <p>{{geteventdetails.eventdetails.description}}</p>
+            <br>
+            <h5 class="desc">
+                Product
+            </h5>
+            <p>{{geteventdetails.eventdetails.productdetails}}</p>
+        </ion-card-content>
+
+        <ion-item actions class="demo-card">
+            <button clear item-left pink>
+                <ion-icon name='heart'></ion-icon>
+                    <span>{{geteventdetails.eventlike}} likes</span>
+            </button>
+        </ion-item>
+    </ion-card>
+</ion-content>
+<!--
+<button fab danger fab-bottom fab-right (click)="bookticket()" style="z-index: 100" [hidden]="nowdate < newdate">
+    <ion-icon name='cart' is-active="true"></ion-icon>
+</button>
+-->

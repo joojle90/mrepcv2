@@ -1,39 +1,13 @@
 .byproduct {
-    .events {
-        position: relative;
-        text-align: center !important;
-    }
-    ion-card {
-        margin: 3px 10px 3px 10px;
+    ion-item {
+        ion-avatar {
+            min-width: 7em;
+            min-height: 7em;
 
-        img {
-            filter: brightness(80%);
+            img {
+                max-width: 6em;
+                max-height: 6em;
+            }
         }
-        p.events-title {
-            position: absolute;
-            top: 32%;
-            font-size: 2.0em;
-            width: 100%;
-            font-weight: bold;
-            color: white !important;
-        }
-        p.events-subtitle {
-            font-size: 1.0em;
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            font-weight: bold;
-            color: #FFF23D !important;
-        }
-        button.events-details {
-            position: absolute;
-            bottom: 0;
-            font-size: 0.8em;
-            width: 25%;
-            right: 0.4em;
-        }
-    }
-    .swiper-pagination-bullet {
-        background: white;
     }
 }

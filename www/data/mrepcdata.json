@@ -79,22 +79,18 @@
 
     "mastermenu": [{
         "featuredmenu": "Highlight Events",
-        "desc": "Up Coming Events and Seminar",
         "image": "img/mastermenu/highlights.jpg",
         "action": 1
   }, {
         "featuredmenu": "Online Marketplace",
-        "desc": "Marketplace",
         "image": "img/mastermenu/marketplace.jpg",
         "action": 2
   }, {
         "featuredmenu": "Trade Shows",
-        "desc": "List All Events",
         "image": "img/mastermenu/tradeshows.jpg",
         "action": 3
   }, {
         "featuredmenu": "Seminar",
-        "desc": "List All Seminar",
         "image": "img/mastermenu/seminar.jpg",
         "action": 4
   }],
@@ -155,7 +151,7 @@
             "startdate": "09 Mar 2016",
             "enddate": "11 Mar 2016",
             "visitor": 4000,
-            "location": "Bangkok, Thailan",
+            "location": "Bangkok, Thailand",
             "fee": 0,
             "lat": 43.071584,
             "lng": -89.380120,

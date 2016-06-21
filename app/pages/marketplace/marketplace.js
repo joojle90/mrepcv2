@@ -6,6 +6,10 @@ import {
     ByproductPage
 }
 from '../byproduct/byproduct';
+import {
+    BysupplierPage
+}
+from '../bysupplier/bysupplier';
 
 /*
   Generated class for the TabsPage page.
@@ -26,7 +30,7 @@ export class MarketplacePage {
     constructor(nav) {
         this.nav = nav;
         this.tab1Root = ByproductPage;
-//        this.tab2Root = TophitsPage;
+        this.tab2Root = BysupplierPage;
 //        this.tab3Root = CategoryPage;
     }
 }

@@ -1,0 +1,93 @@
+<ion-searchbar primary placeholder="Search"></ion-searchbar>
+<ion-content class="home">
+<!--
+    <ion-card class="events" *ngFor="let mm of mastermenulist; let i = index">
+        <ion-slides pager *ngIf="i==0">
+            <ion-slide *ngFor="let me of mrepceventslist; let i = index">
+                <a clear (click)="eventdetail(mrepceventslist[i])">
+                    <img [src]="mrepceventslist[i].image" />
+                    <p class="events-title" style="color: #a8f300 !important">{{me.eventdetail[0].name}}</p>
+                    <p class="events-subtitle">{{me.eventdetail[0].startdate}}</p>
+                </a>
+            </ion-slide>
+        </ion-slides>
+        <a clear (click)="eventdetail(mastermenulist[i].action)">
+            <div *ngIf="i!=0">
+                <img [src]="mastermenulist[i].image" />
+            </div>
+            <p class="events-title">{{mm.featuredmenu}}</p>
+            <p class="events-subtitle">{{mm.desc}}</p>
+        </a>
+    </ion-card>
+-->
+    <ion-content>
+  <ion-list>
+
+    <ion-list-header>Common Product</ion-list-header>
+
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="img/productbuyer/buyer1.png">
+      </ion-avatar>
+      <h2>Automotive Components</h2>
+      <p>Automotive Components Description</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="img/productbuyer/buyer2.png">
+      </ion-avatar>
+      <h2>Household Products</h2>
+      <p>Household Products Description</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="img/productbuyer/buyer3.png">
+      </ion-avatar>
+      <h2>Industrial Products</h2>
+      <p>Industrial Products Description</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="img/productbuyer/buyer4.png">
+      </ion-avatar>
+      <h2>Inner Tubes and Tyres</h2>
+      <p>Inner Tubes and Tyres Description</p>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-list>
+
+    <ion-list-header>Other Product</ion-list-header>
+
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="img/productbuyer/buyer5.png">
+      </ion-avatar>
+      <h2>Medical Devices</h2>
+      <p>Medical Devices Description</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="img/productbuyer/buyer6.png">
+      </ion-avatar>
+      <h2>Retread Materials</h2>
+      <p>Retread Materials Description</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="img/productbuyer/buyer7.png">
+      </ion-avatar>
+      <h2>Sporting Goods and Toys</h2>
+      <p>Sporting Goods and Toys Description</p>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
+</ion-content>
