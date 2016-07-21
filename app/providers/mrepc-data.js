@@ -49,4 +49,10 @@ export class MrepcData {
         });
     }
 
+    getMrepcseminar() {
+        return this.load().then(data => {
+            return data.mrepcseminar;
+        });
+    }
+
 }

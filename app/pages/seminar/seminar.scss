@@ -1,43 +1,35 @@
-.tophits {
-    ion-card {
-        position: relative;
-        text-align: center;
-        height: 50vw;
-
-        img {
-            position: relative;
-            bottom: 100px;
-            filter: brightness(80%);
-        }
-
-        p.like-count {
-            text-align: left;
-            font-size: 1.0em;
-            position: absolute;
-            top: 85%;
-            width: 100%;
-            left: 10px;
-            font-weight: bold;
-            color: #FFF23D !important;
-        }
+.seminar {
+    ion-card.adv-map p {
+        font-size: 0.7em !important;
     }
-    .card-title {
-        position: absolute;
-        top: 25%;
-        font-size: 2.0em;
-        width: 100%;
+    ion-card img {
+        height: 220px !important;
+    }
+    ion-label {
+        margin:13px 8px 8px 0;
+    }
+    button[fab].fab-map {
+        top: calc(100% - 35px);
+        z-index: 50;
+    }
+    .item-bold {
         font-weight: bold;
-        color: #fff;
-    }
-    .tophits-rank {
-        font-size: 1em;
-        background-color: #F53D3D;
-    }
-    [fab-right] {
-        right: 10px;
-    }
 
-    [fab-bottom] {
-        top: 60%;
+        span {
+            color: black;
+        }
+    }
+    .eventdesc {
+        font-size:11px;
+
+        [item-left] {
+            margin: 9px 4px 9px 0;
+        }
+    }
+    .item {
+        padding-left: 10px;
+    }
+    .item-inner {
+        margin-left: 5px !important;
     }
 }

@@ -2,22 +2,28 @@
     .events {
         position: relative;
         text-align: center !important;
+        height: 30%;
+
+        .slide-title {
+            top: 37%;
+        }
     }
     ion-card {
         margin: 3px 10px 3px 0px;
         width: 100%;
 
         img {
-            filter: brightness(70%);
+            filter: brightness(45%);
         }
         p.events-title {
             position: absolute;
             top: 40%;
-            font-size: 2.2em;
+            font-size: 32px;
             width: 100%;
             font-weight: bold;
             color: white !important;
             text-transform: uppercase;
+            font-family: monospace;
         }
         p.events-subtitle {
             font-size: 1.0em;
@@ -38,4 +44,23 @@
     .swiper-pagination-bullet {
         background: white;
     }
+}
+
+.toolbar-background {
+    background: black !important;
+}
+
+.bar-button-default, .toolbar-title {
+    color: #f9eb13 !important;
+}
+
+.home-page .toolbar-title {
+    text-align: center;
+    img {
+        height: 40px;
+    }
+}
+
+.toolbar[secondary] .toolbar-background {
+    background: #e0e0e0;
 }

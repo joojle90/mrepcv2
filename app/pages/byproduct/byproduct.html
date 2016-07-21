@@ -1,6 +1,6 @@
 <ion-searchbar primary placeholder="Search"></ion-searchbar>
 <ion-content class="byproduct">
-<!--
+    <!--
     <ion-card class="events" *ngFor="let mm of mastermenulist; let i = index">
         <ion-slides pager *ngIf="i==0">
             <ion-slide *ngFor="let me of mrepceventslist; let i = index">
@@ -20,58 +20,56 @@
         </a>
     </ion-card>
 -->
-    <ion-content>
-  <ion-list>
-    <ion-item>
-      <ion-avatar item-left>
-        <img src="img/productbuyer/buyer1.png">
-      </ion-avatar>
-      <h2>Automotive Components</h2>
-    </ion-item>
+    <ion-list>
+        <button ion-item (click)="openNavDetailsPage('Automotive Components')">
+            <ion-avatar item-left>
+                <img src="img/productbuyer/buyer1.png">
+            </ion-avatar>
+            <h2>Automotive Components</h2>
+        </button>
 
-    <ion-item>
-      <ion-avatar item-left>
-        <img src="img/productbuyer/buyer2.png">
-      </ion-avatar>
-      <h2>Household Products</h2>
-    </ion-item>
+        <button ion-item (click)="openNavDetailsPage('Household Products')">
+            <ion-avatar item-left>
+                <img src="img/productbuyer/buyer2.png">
+            </ion-avatar>
+            <h2>Household Products</h2>
+        </button>
 
-    <ion-item>
-      <ion-avatar item-left>
-        <img src="img/productbuyer/buyer3.png">
-      </ion-avatar>
-      <h2>Industrial Products</h2>
-    </ion-item>
+        <button ion-item (click)="openNavDetailsPage('Industrial Products')">
+            <ion-avatar item-left>
+                <img src="img/productbuyer/buyer3.png">
+            </ion-avatar>
+            <h2>Industrial Products</h2>
+        </button>
 
-    <ion-item>
-      <ion-avatar item-left>
-        <img src="img/productbuyer/buyer4.png">
-      </ion-avatar>
-      <h2>Inner Tubes and Tyres</h2>
-    </ion-item>
+        <button ion-item (click)="openNavDetailsPage('Inner Tubes and Tyres')">
+            <ion-avatar item-left>
+                <img src="img/productbuyer/buyer4.png">
+            </ion-avatar>
+            <h2>Inner Tubes and Tyres</h2>
+        </button>
 
-    <ion-item>
-      <ion-avatar item-left>
-        <img src="img/productbuyer/buyer5.png">
-      </ion-avatar>
-      <h2>Medical Devices</h2>
-    </ion-item>
+        <button ion-item (click)="openNavDetailsPage('Medical Devices')">
+            <ion-avatar item-left>
+                <img src="img/productbuyer/buyer5.png">
+            </ion-avatar>
+            <h2>Medical Devices</h2>
+        </button>
 
-    <ion-item>
-      <ion-avatar item-left>
-        <img src="img/productbuyer/buyer6.png">
-      </ion-avatar>
-      <h2>Retread Materials</h2>
-    </ion-item>
+        <button ion-item (click)="openNavDetailsPage('Retread Materials')">
+            <ion-avatar item-left>
+                <img src="img/productbuyer/buyer6.png">
+            </ion-avatar>
+            <h2>Retread Materials</h2>
+        </button>
 
-    <ion-item>
-      <ion-avatar item-left>
-        <img src="img/productbuyer/buyer7.png">
-      </ion-avatar>
-      <h2>Sporting Goods and Toys</h2>
-    </ion-item>
+        <button ion-item (click)="openNavDetailsPage('Sporting Goods and Toys')">
+            <ion-avatar item-left>
+                <img src="img/productbuyer/buyer7.png">
+            </ion-avatar>
+            <h2>Sporting Goods and Toys</h2>
+        </button>
 
-  </ion-list>
+    </ion-list>
 
-</ion-content>
 </ion-content>

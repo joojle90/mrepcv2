@@ -8597,129 +8597,89 @@ body {
 .action-sheet-group ion-icon.ion-ios-social-pinterest {
   color: #F13823; }
 
-.tophits ion-card {
-  position: relative;
-  text-align: center;
-  height: 50vw; }
-  .tophits ion-card img {
-    position: relative;
-    bottom: 100px;
-    -webkit-filter: brightness(80%);
-    filter: brightness(80%); }
-  .tophits ion-card p.like-count {
-    text-align: left;
-    font-size: 1.0em;
-    position: absolute;
-    top: 85%;
-    width: 100%;
-    left: 10px;
-    font-weight: bold;
-    color: #FFF23D !important; }
+.seminar ion-card.adv-map p {
+  font-size: 0.7em !important; }
 
-.tophits .card-title {
-  position: absolute;
-  top: 25%;
-  font-size: 2.0em;
-  width: 100%;
-  font-weight: bold;
-  color: #fff; }
+.seminar ion-card img {
+  height: 220px !important; }
 
-.tophits .tophits-rank {
-  font-size: 1em;
-  background-color: #F53D3D; }
+.seminar ion-label {
+  margin: 13px 8px 8px 0; }
 
-.tophits [fab-right] {
-  right: 10px; }
+.seminar button[fab].fab-map {
+  top: calc(100% - 35px);
+  z-index: 50; }
 
-.tophits [fab-bottom] {
-  top: 60%; }
+.seminar .item-bold {
+  font-weight: bold; }
+  .seminar .item-bold span {
+    color: black; }
 
-.promotion .slide-contents {
-  display: block;
-  height: 100%;
-  padding: 500px 0;
-  width: 100%;
-  font-weight: bold;
-  font-size: 2.5em;
-  color: #fff; }
+.seminar .eventdesc {
+  font-size: 11px; }
+  .seminar .eventdesc [item-left] {
+    margin: 9px 4px 9px 0; }
 
-.promotion ion-slide p.promotion-disc {
-  position: absolute;
-  top: 30%;
-  font-size: 2.7em;
-  width: 100%;
-  font-weight: bold;
-  color: #F7FF00;
-  font-family: serif;
-  background-color: black; }
+.seminar .item {
+  padding-left: 10px; }
 
-.comingsoon .slide-contents {
-  display: block;
-  height: 100%;
-  padding: 500px 0;
-  width: 100%;
-  font-weight: bold;
-  font-size: 2.5em;
-  color: #fff; }
+.seminar .item-inner {
+  margin-left: 5px !important; }
 
-.comingsoon ion-slide p.comingsoon-date {
-  position: absolute;
-  top: 65%;
-  font-size: 2.0em;
-  width: 100%;
-  font-weight: bold;
-  color: #F7FF00;
-  background-color: black; }
+.myseminar ion-card.adv-map p {
+  font-size: 0.7em !important; }
 
-.howto-page .toolbar-background {
-  background: #fff;
-  border-color: transparent; }
+.myseminar ion-card img {
+  height: 220px !important; }
 
-.howto-page .slide-zoom {
-  height: 100%; }
+.myseminar ion-label {
+  margin: 13px 8px 8px 0; }
 
-.howto-page .slide-title {
-  margin-top: 2.8rem; }
+.myseminar button[fab].fab-map {
+  top: calc(100% - 35px);
+  z-index: 50; }
 
-.howto-page .slide-image {
-  max-height: 50%;
-  max-width: 60%;
-  margin: 36px 0; }
+.myseminar .item-bold {
+  font-weight: bold; }
+  .myseminar .item-bold span {
+    color: black; }
 
-.howto-page b {
-  font-weight: 500; }
+.myseminar .eventdesc {
+  font-size: 11px; }
+  .myseminar .eventdesc [item-left] {
+    margin: 9px 4px 9px 0; }
 
-.howto-page p {
-  padding: 0 40px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #60646B; }
-  .howto-page p b {
-    color: #000000; }
+.myseminar .item {
+  padding-left: 10px; }
 
-.aboutus ion-icon.back-button-icon {
-  min-width: 25px; }
+.myseminar .item-inner {
+  margin-left: 5px !important; }
 
 .home .events {
   position: relative;
-  text-align: center !important; }
+  text-align: center !important;
+  height: 30%; }
+  .home .events .slide-title {
+    top: 37%; }
 
 .home ion-card {
-  margin: 3px 10px 3px 10px; }
+  margin: 3px 10px 3px 0px;
+  width: 100%; }
   .home ion-card img {
-    -webkit-filter: brightness(80%);
-    filter: brightness(80%); }
+    -webkit-filter: brightness(45%);
+    filter: brightness(45%); }
   .home ion-card p.events-title {
     position: absolute;
-    top: 32%;
-    font-size: 2.0em;
+    top: 40%;
+    font-size: 32px;
     width: 100%;
     font-weight: bold;
-    color: white !important; }
+    color: white !important;
+    text-transform: uppercase; }
   .home ion-card p.events-subtitle {
     font-size: 1.0em;
     position: absolute;
-    top: 50%;
+    top: 60%;
     width: 100%;
     font-weight: bold;
     color: #FFF23D !important; }
@@ -8735,6 +8695,9 @@ body {
 
 .tradeshows ion-card.adv-map p {
   font-size: 0.7em !important; }
+
+.tradeshows ion-card img {
+  height: 220px !important; }
 
 .tradeshows ion-label {
   margin: 13px 8px 8px 0; }
@@ -8772,35 +8735,107 @@ body {
 .marketplace-page ion-searchbar {
   padding: 0; }
 
-.byproduct .events {
-  position: relative;
-  text-align: center !important; }
+.byproduct button ion-avatar {
+  min-width: 7em;
+  min-height: 7em; }
+  .byproduct button ion-avatar img {
+    max-width: 6em;
+    max-height: 6em; }
 
-.byproduct ion-card {
-  margin: 3px 10px 3px 10px; }
-  .byproduct ion-card img {
-    -webkit-filter: brightness(80%);
-    filter: brightness(80%); }
-  .byproduct ion-card p.events-title {
-    position: absolute;
-    top: 32%;
-    font-size: 2.0em;
-    width: 100%;
-    font-weight: bold;
-    color: white !important; }
-  .byproduct ion-card p.events-subtitle {
-    font-size: 1.0em;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    font-weight: bold;
-    color: #FFF23D !important; }
-  .byproduct ion-card button.events-details {
-    position: absolute;
-    bottom: 0;
-    font-size: 0.8em;
-    width: 25%;
-    right: 0.4em; }
+.byproduct button h2 {
+  text-transform: capitalize; }
 
-.byproduct .swiper-pagination-bullet {
-  background: white; }
+.bysupplier button ion-avatar {
+  min-width: 7em;
+  min-height: 7em; }
+  .bysupplier button ion-avatar img {
+    max-width: 6em;
+    max-height: 6em;
+    margin-top: 40%; }
+
+.seminar ion-card.adv-map p {
+  font-size: 0.7em !important; }
+
+.seminar ion-card img {
+  height: 220px !important; }
+
+.seminar ion-label {
+  margin: 13px 8px 8px 0; }
+
+.seminar button[fab].fab-map {
+  top: calc(100% - 35px);
+  z-index: 50; }
+
+.seminar .item-bold {
+  font-weight: bold; }
+  .seminar .item-bold span {
+    color: black; }
+
+.seminar .eventdesc {
+  font-size: 11px; }
+  .seminar .eventdesc [item-left] {
+    margin: 9px 4px 9px 0; }
+
+.seminar .item {
+  padding-left: 10px; }
+
+.seminar .item-inner {
+  margin-left: 5px !important; }
+
+.mytradeshows ion-card.adv-map p {
+  font-size: 0.7em !important; }
+
+.mytradeshows ion-card img {
+  height: 220px !important; }
+
+.mytradeshows ion-label {
+  margin: 13px 8px 8px 0; }
+
+.mytradeshows button[fab].fab-map {
+  top: calc(100% - 35px);
+  z-index: 50; }
+
+.mytradeshows .item-bold {
+  font-weight: bold; }
+  .mytradeshows .item-bold span {
+    color: black; }
+
+.mytradeshows .eventdesc {
+  font-size: 11px; }
+  .mytradeshows .eventdesc [item-left] {
+    margin: 9px 4px 9px 0; }
+
+.mytradeshows .item {
+  padding-left: 10px; }
+
+.mytradeshows .item-inner {
+  margin-left: 5px !important; }
+
+.myseminar ion-card.adv-map p {
+  font-size: 0.7em !important; }
+
+.myseminar ion-card img {
+  height: 220px !important; }
+
+.myseminar ion-label {
+  margin: 13px 8px 8px 0; }
+
+.myseminar button[fab].fab-map {
+  top: calc(100% - 35px);
+  z-index: 50; }
+
+.myseminar .item-bold {
+  font-weight: bold; }
+  .myseminar .item-bold span {
+    color: black; }
+
+.myseminar .eventdesc {
+  font-size: 11px; }
+  .myseminar .eventdesc [item-left] {
+    margin: 9px 4px 9px 0; }
+
+.myseminar .item {
+  padding-left: 10px; }
+
+.myseminar .item-inner {
+  margin-left: 5px !important; }

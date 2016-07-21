@@ -1,7 +1,7 @@
-
-<ion-searchbar primary placeholder="Search"></ion-searchbar>
+<ion-searchbar primary placeholder="Search">
+</ion-searchbar>
 <ion-content class="bysupplier">
-<!--
+    <!--
     <ion-card class="events" *ngFor="let mm of mastermenulist; let i = index">
         <ion-slides pager *ngIf="i==0">
             <ion-slide *ngFor="let me of mrepceventslist; let i = index">
@@ -22,44 +22,44 @@
     </ion-card>
 -->
     <ion-content>
-  <ion-list>
+        <ion-list>
 
-    <ion-item>
-      <ion-avatar item-left>
-        <img src="img/productsupplier/supplier1.jpg">
-      </ion-avatar>
-      <h2>Schmaco</h2>
-    </ion-item>
+            <button ion-item (click)="openNavDetailsPage('Schmaco')">
+                <ion-avatar item-left>
+                    <img src="img/productsupplier/supplier1.jpg">
+                </ion-avatar>
+                <h2>Schmaco</h2>
+            </button>
 
-    <ion-item>
-      <ion-avatar item-left>
-        <img src="img/productsupplier/supplier2.jpg">
-      </ion-avatar>
-      <h2>New Edge Corporation</h2>
-    </ion-item>
+            <button ion-item (click)="openNavDetailsPage('New Edge Corporation')">
+                <ion-avatar item-left>
+                    <img src="img/productsupplier/supplier2.jpg">
+                </ion-avatar>
+                <h2>New Edge Corporation</h2>
+            </button>
 
-    <ion-item>
-      <ion-avatar item-left>
-        <img src="img/productsupplier/supplier3.jpg">
-      </ion-avatar>
-      <h2>Latexx</h2>
-    </ion-item>
+            <button ion-item (click)="openNavDetailsPage('Latexx')">
+                <ion-avatar item-left>
+                    <img src="img/productsupplier/supplier3.jpg">
+                </ion-avatar>
+                <h2>Latexx</h2>
+            </button>
 
-    <ion-item>
-      <ion-avatar item-left>
-        <img src="img/productsupplier/supplier4.jpg">
-      </ion-avatar>
-      <h2>Nulatex</h2>
-    </ion-item>
+            <button ion-item (click)="openNavDetailsPage('Nulatex')">
+                <ion-avatar item-left>
+                    <img src="img/productsupplier/supplier4.jpg">
+                </ion-avatar>
+                <h2>Nulatex</h2>
+            </button>
 
-    <ion-item>
-      <ion-avatar item-left>
-        <img src="img/productsupplier/supplier5.jpg">
-      </ion-avatar>
-      <h2>Jebco</h2>
-    </ion-item>
+            <button ion-item (click)="openNavDetailsPage('Jebco')">
+                <ion-avatar item-left>
+                    <img src="img/productsupplier/supplier5.jpg">
+                </ion-avatar>
+                <h2>Jebco</h2>
+            </button>
 
-  </ion-list>
+        </ion-list>
 
-</ion-content>
+    </ion-content>
 </ion-content>

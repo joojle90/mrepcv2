@@ -1,6 +1,10 @@
 .marketplace {
+    ion-tabs[tabbarPlacement=top] tabbar {
+        border-bottom: 0;
+    }
     tabbar {
         line-height: 30px;
+        background: black;
 
         .tab-button[aria-selected=true] {
             color: #32db64;
@@ -11,6 +15,9 @@
     }
     ion-navbar-section {
         display: none;
+    }
+    .tab-button {
+        color: yellow;
     }
 }
 

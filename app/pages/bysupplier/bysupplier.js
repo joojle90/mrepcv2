@@ -18,6 +18,10 @@ import {
     MarketplacePage
 }
 from '../marketplace/marketplace';
+import {
+    BysupplierDetailsPage
+}
+from '../bysupplierdetails/bysupplierdetails';
 
 /*
   Generated class for the CategoryPage page.
@@ -92,5 +96,9 @@ export class BysupplierPage {
                 eventlike: event.like
             });
         }
+    }
+
+    openNavDetailsPage(item){
+        this.nav.push(BysupplierDetailsPage, { item: item });
     }
 }

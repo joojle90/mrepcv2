@@ -30,6 +30,22 @@ import {
     MarketplacePage
 }
 from './pages/marketplace/marketplace';
+import {
+    MytradeshowsPage
+}
+from './pages/mytradeshows/mytradeshows';
+import {
+    MyseminarPage
+}
+from './pages/myseminar/myseminar';
+import {
+    TutorialPage
+}
+from './pages/tutorial/tutorial';
+import {
+    AboutusPage
+}
+from './pages/aboutus/aboutus';
 /*import {
     PlayvideoPage
 }
@@ -112,7 +128,7 @@ class MrepcApp {
 
             var sidemenudata = [];
             var sideitems = {};
-            var classcomps = [HomePage, TradeshowsPage, MarketplacePage];
+            var classcomps = [HomePage, TradeshowsPage, MarketplacePage, MytradeshowsPage, MyseminarPage, TutorialPage, AboutusPage];
             var j = 0;
             var count;
 

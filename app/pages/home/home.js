@@ -18,6 +18,14 @@ import {
     MarketplacePage
 }
 from '../marketplace/marketplace';
+import {
+    SeminarPage
+}
+from '../seminar/seminar';
+import {
+    LoginPage
+}
+from '../login/login';
 
 /*
   Generated class for the CategoryPage page.
@@ -83,7 +91,7 @@ export class HomePage {
         } else if(event == 3){
             this.nav.push(TradeshowsPage);
         } else if(event == 4){
-            this.nav.push(TradeshowsPage);
+            this.nav.push(SeminarPage);
         } else {
             var imgpic = event.image;
             this.nav.push(ShowdetailsPage, {
@@ -92,5 +100,9 @@ export class HomePage {
                 eventlike: event.like
             });
         }
+    }
+
+    useraccount(){
+        this.nav.push(LoginPage);
     }
 }

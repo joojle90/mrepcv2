@@ -1,5 +1,5 @@
 import {
-    IonicApp, Page, NavController
+    Page, NavController
 }
 from 'ionic-angular';
 import {
@@ -7,7 +7,7 @@ import {
 }
 from '../../providers/mrepc-data';
 import {
-    PlayvideoPage
+    ShowdetailsPage
 }
 from '../showdetails/showdetails';
 
@@ -16,40 +16,44 @@ Page({
     templateUrl: 'build/pages/myseminar/myseminar.html',
     providers: [MrepcData]
 })
-export class MySeminarPage {
+export class MyseminarPage {
     static get parameters() {
         return [
-          [IonicApp], [NavController], [MrepcData]
+          [NavController], [MrepcData]
         ]
     }
-    constructor(app, nav, mrepcdata) {
-        this.app = app;
+    constructor(nav, mrepcdata) {
         this.nav = nav;
         this.mrepcdata = mrepcdata;
 
         mrepcdata.load();
 
-        this.promotionlist = [];
+        this.myseminarlist = [];
 
-        this.loadDataPromotion();
+        this.loadDataMyseminar();
     }
 
-    loadDataPromotion() {
-        return this.mrepcdata.getDataMovie().then(data => {
-            this.promotionlist = data.filter(newdata => newdata.discount > 0);
-            console.log(this.promotionlist);
+    loadDataMyseminar() {
+        var monthname = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+
+        return this.mrepcdata.getMrepcseminar().then(data => {
+            this.myseminarlist = data.sort((a,b) => {
+                var thedatea = a.eventdetail[0].startdate.split(" ");
+                var setdatea = new Date (thedatea[2], monthname.indexOf(thedatea[1].toLowerCase()), thedatea[0]);
+                var thedateb = b.eventdetail[0].startdate.split(" ");
+                var setdateb = new Date (thedateb[2], monthname.indexOf(thedateb[1].toLowerCase()), thedateb[0]);
+                return setdateb - setdatea;
+            });
+            this.myseminarlist = this.myseminarlist.slice(0, 2);
         });
     }
 
-    getpromotion() {
-        this.nav.push(BookticketPage);
-    }
-
-    watchtrailer(moviedetail) {
-        var trailerlink = `https://www.youtube.com/embed/${moviedetail.trailer}`;
-        this.nav.push(PlayvideoPage, {
-            trailerlinks: trailerlink,
-            moviedetails: moviedetail
+    myseminardetail(event) {
+        var imgpic = event.image;
+        this.nav.push(ShowdetailsPage, {
+            evenpic: imgpic,
+            eventdetails: event.eventdetail[0],
+            eventlike: event.like
         });
     }
 }

@@ -11,7 +11,7 @@
             "title": "Trade Show",
             "component": "TradeShowPage",
             "icon": "globe",
-            "notif": 4
+            "notif": 10
     }, {
             "idmenu": 3,
             "title": "Online Marketplace",
@@ -23,33 +23,27 @@
         "name": "Featured",
         "submenu": [{
             "idmenu": 4,
-            "title": "My Seminar",
+            "title": "My Tradeshows",
             "component": "SeminarPage",
             "icon": "aperture",
             "notif": 3
     }, {
             "idmenu": 5,
-            "title": "My Events",
+            "title": "My Seminar",
             "component": "EventsPage",
             "icon": "calendar",
-            "notif": 8
+            "notif": 2
     }],
         "subnameid": ["3", "4", "5"]
   }, {
         "name": "Misc",
         "submenu": [{
             "idmenu": 6,
-            "title": "Settings",
-            "component": "SettingsPage",
-            "icon": "cog",
-            "note": "Config"
-    }, {
-            "idmenu": 7,
             "title": "Tutorial",
             "component": "TutorialPage",
             "icon": "book"
     }, {
-            "idmenu": 8,
+            "idmenu": 7,
             "title": "About Us",
             "component": "AboutPage",
             "icon": "people"
@@ -315,6 +309,112 @@
         }],
         "like": 4201,
         "exhibitors": 7000,
+        "country": "-",
+        "hallsize": "-"
+  }],
+
+    "mrepcseminar": [{
+        "idlist": "MRSM001",
+        "image": "img/photos/seminar1.jpg",
+        "eventdetail": [{
+            "name": "Rubber 101 - Class 3 - Synthetic Rubbers",
+            "description": "Rubber 101 is structured to provide knowledge to key personnel in the rubber product manufacturing on fundamentals of rubber technology covering aspects of the type and properties of rubber, compounding, processing and testing.",
+            "linkurl": "www.mrepc.com",
+            "startdate": "17 May 2016",
+            "enddate": "17 May 2016",
+            "visitor": 93925,
+            "location": "MREPC, Malaysia",
+            "fee": 0,
+            "lat": 43.071584,
+            "lng": -89.380120,
+            "sponsor": "MREPC 2016",
+            "status": "completed"
+    }],
+        "like": 2140,
+        "exhibitors": 4053,
+        "country": 67,
+        "hallsize": 63906
+  }, {
+        "idlist": "MRSM002",
+        "image": "img/photos/seminar2.jpg",
+        "eventdetail": [{
+            "name": "Northern Region Seminar",
+            "description": "MREPC's Northern Region Seminar took place at the Light Hotel,Seberang Jaya this morning. This is an annual programme specially organised for the rubber product manufacturers from the state of Perlis,Kedah,Penang & Perak. MREPC would like to take this opportunity to thank all speakers from Ministry of International Trade & Industry,Ministry of Human Resources and Ministry of Natural Resources & Environment for making this event a successful one. To all participants, we hope today's session was beneficial.",
+            "linkurl": "www.mrepc.com",
+            "startdate": "02 Jun 2016",
+            "enddate": "02 Jun 2016",
+            "visitor": "-",
+            "location": "The Light Hotel, Seberang Jaya, Pulau Pinang, Malaysia",
+            "fee": 0,
+            "lat": 43.071584,
+            "lng": -89.380120,
+            "sponsor": "MREPC 2016",
+            "status": "completed"
+    }],
+        "like": 2170,
+        "exhibitors": "-",
+        "country": "-",
+        "hallsize": "-"
+  }, {
+        "idlist": "MRSM003",
+        "image": "img/photos/seminar3.jpg",
+        "eventdetail": [{
+            "name": "Latex 101 - Class 5 - Characterization of Latex Dispersions",
+            "description": "Acquire extensive knowledge on latex properties and processing. Understand the techniques and characterizations on converting latex into products. Learn the testing procedures for desired quality.",
+            "linkurl": "www.mrepc.com",
+            "startdate": "12 Jul 2016",
+            "enddate": "12 Jul 2016",
+            "visitor": 4000,
+            "location": "MREPC, Malaysia",
+            "fee": 0,
+            "lat": 43.071584,
+            "lng": -89.380120,
+            "sponsor": "MREPC 2016",
+            "status": "coming soon"
+    }],
+        "like": 2170,
+        "exhibitors": 217,
+        "country": "-",
+        "hallsize": "-"
+  }, {
+        "idlist": "MRSM004",
+        "image": "img/photos/seminar4.jpg",
+        "eventdetail": [{
+            "name": "Rubber 101 - Class 7 - Fillers ",
+            "description": "Rubber 101 is structured to provide knowledge to key personnel in the rubber product manufacturing on fundamentals of rubber technology covering aspects of the type and properties of rubber, compounding, processing and testing.",
+            "linkurl": "www.mrepc.com",
+            "startdate": "11 Oct 2016",
+            "enddate": "11 Oct 2016",
+            "visitor": 10400,
+            "location": "MREPC Malaysia",
+            "fee": 0,
+            "lat": 43.071584,
+            "lng": -89.380120,
+            "sponsor": "MREPC 2016",
+            "status": "coming soon"
+    }],
+        "like": 1170,
+        "exhibitors": 447,
+        "country": 18,
+        "hallsize": 5250
+  }, {
+        "idlist": "MRSM005",
+        "image": "img/photos/seminar5.jpg",
+        "eventdetail": [{
+            "name": "Latex 101 - Class 9 - Latex Dipping Processes ",
+            "description": "Acquire extensive knowledge on latex properties and processing. Understand the techniques and characterizations on converting latex into products. Learn the testing procedures for desired quality.",
+            "startdate": "08 Nov 2016",
+            "enddate": "08 Nov 2016",
+            "visitor": 72036,
+            "location": "MREPC, Malaysia",
+            "fee": 0,
+            "lat": 43.071584,
+            "lng": -89.380120,
+            "sponsor": "MREPC 2016",
+            "status": "coming soon"
+        }],
+        "like": 2380,
+        "exhibitors": 1145,
         "country": "-",
         "hallsize": "-"
   }],

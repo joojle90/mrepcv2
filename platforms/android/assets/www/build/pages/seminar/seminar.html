@@ -4,30 +4,40 @@
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-navbar danger *navbar>
-    <ion-title>My Magazine</ion-title>
+<ion-navbar secondary *navbar>
+    <ion-title>Seminar</ion-title>
     <button menuToggle>
         <ion-icon name="menu"></ion-icon>
     </button>
-
-    <ion-buttons end>
-        <button (click)="useraccount()">
-            <ion-icon ios="ios-person" md="md-person"></ion-icon>
-        </button>
-    </ion-buttons>
 </ion-navbar>
 
-<ion-content class="tophits">
-
-    <ion-list *ngFor="#th of tophitlist; #i = index">
+<ion-content class="seminar">
+    <ion-card class="adv-map" *ngFor="let sml of seminarlist; let i = index">
+        <div style="position: relative">
+            <img [src]="seminarlist[i].image">
+            <button fab fab-right fab-top class="fab-map" (click)="seminardetail(seminarlist[i])">
+                <ion-icon name='paper'></ion-icon>
+            </button>
+        </div>
         <ion-item>
-            <ion-thumbnail item-left>
-                <img [src]="tophitlist[i].image" />
-            </ion-thumbnail>
-            <h2>{{tophitlist[i].moviedet[0].name}}</h2>
-            <p>{{th.like}} likes</p>
-            <button clear item-right>View</button>
+            <ion-icon subtle secondary large item-left name='globe'></ion-icon>
+            <h1>{{sml.eventdetail[0].name}}</h1>
         </ion-item>
-    </ion-list>
-
+        <span style="padding-left: 50px">{{sml.eventdetail[0].location}}</span>
+        <ion-item actions class="eventdesc">
+            <span item-left secondary class="item-bold">
+                <ion-icon name="time" item-left></ion-icon>
+                <span>{{sml.eventdetail[0].startdate}} - {{sml.eventdetail[0].enddate}}</span>
+            </span>
+            <span item-left style="margin-right: 15px;">{{sml.location}}</span>
+            <span item-left secondary class="item-bold">
+                <ion-icon name="people" item-left></ion-icon>
+                <span>{{sml.eventdetail[0].visitor}}</span>
+            </span>
+            <span item-left style="margin-right: 15px;">{{sml.visitor}}</span>
+            <button secondary clear item-right>
+                <ion-icon name='navigate'></ion-icon>
+            </button>
+        </ion-item>
+    </ion-card>
 </ion-content>

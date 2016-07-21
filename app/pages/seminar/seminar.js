@@ -3,66 +3,56 @@ import {
 }
 from 'ionic-angular';
 import {
-    MovieData
+    MrepcData
 }
-from '../../providers/movie-data';
+from '../../providers/mrepc-data';
 import {
-    BookticketPage
+    ShowdetailsPage
 }
-from '../../pages/bookticket/bookticket';
-import {
-    PlayvideoPage
-}
-from '../../pages/playvideo/playvideo';
+from '../showdetails/showdetails';
 
-/*
-  Generated class for the TophitsPage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @
 Page({
-    templateUrl: 'build/pages/tophits/tophits.html',
-    providers: [MovieData],
-    config: {}
+    templateUrl: 'build/pages/seminar/seminar.html',
+    providers: [MrepcData]
 })
-export class TophitsPage {
+export class SeminarPage {
     static get parameters() {
         return [
-          [NavController], [MovieData]
+          [NavController], [MrepcData]
         ]
     }
-    constructor(nav, moviedata) {
+    constructor(nav, mrepcdata) {
         this.nav = nav;
-        this.moviedata = moviedata;
+        this.mrepcdata = mrepcdata;
 
-        moviedata.load();
+        mrepcdata.load();
 
-        this.tophitlist = [];
+        this.seminarlist = [];
 
-        this.loadDataTophits();
+        this.loadDataSeminar();
     }
 
-    loadDataTophits() {
-        return this.moviedata.getDataMovie().then(data => {
-            this.tophitlist = data.sort((a,b) => {
-                    return b.like - a.like;
+    loadDataSeminar() {
+        var monthname = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+
+        return this.mrepcdata.getMrepcseminar().then(data => {
+            this.seminarlist = data.sort((a,b) => {
+                var thedatea = a.eventdetail[0].startdate.split(" ");
+                var setdatea = new Date (thedatea[2], monthname.indexOf(thedatea[1].toLowerCase()), thedatea[0]);
+                var thedateb = b.eventdetail[0].startdate.split(" ");
+                var setdateb = new Date (thedateb[2], monthname.indexOf(thedateb[1].toLowerCase()), thedateb[0]);
+                return setdateb - setdatea;
             });
-            this.tophitlist = this.tophitlist.slice(0, 10);
-            console.log(this.tophitlist);
         });
     }
 
-    bookticket() {
-        this.nav.push(BookticketPage);
-    }
-
-    watchtrailer(moviedetail) {
-        var trailerlink = `https://www.youtube.com/embed/${moviedetail.trailer}`;
-        this.nav.push(PlayvideoPage, {
-            trailerlinks: trailerlink,
-            moviedetails: moviedetail
+    seminardetail(event) {
+        var imgpic = event.image;
+        this.nav.push(ShowdetailsPage, {
+            evenpic: imgpic,
+            eventdetails: event.eventdetail[0],
+            eventlike: event.like
         });
     }
 }
