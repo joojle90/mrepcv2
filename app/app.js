@@ -7,7 +7,7 @@ import {
 }
 from 'ionic-angular';
 import {
-    StatusBar
+    StatusBar, Splashscreen
 }
 from 'ionic-native';
 import {
@@ -35,9 +35,9 @@ import {
 }
 from './pages/mytradeshows/mytradeshows';
 import {
-    MyseminarPage
+    SeminarPage
 }
-from './pages/myseminar/myseminar';
+from './pages/seminar/seminar';
 import {
     TutorialPage
 }
@@ -109,6 +109,7 @@ class MrepcApp {
         this.updateleftsidemenu();
 
         this.platform.ready().then(() => {
+            this.hideSplashScreen();
             StatusBar.styleDefault();
             document.addEventListener("backbutton", () => {
 
@@ -122,13 +123,22 @@ class MrepcApp {
         });
     }
 
+    hideSplashScreen() {
+        if (Splashscreen) {
+            setTimeout(() => {
+                Splashscreen.hide();
+            }, 100);
+        }
+    }
+
+
     updateleftsidemenu() {
         return this.mrepcData.getLeftsidemenu().then(data => {
             this.leftsidemenu = data;
 
             var sidemenudata = [];
             var sideitems = {};
-            var classcomps = [HomePage, TradeshowsPage, MarketplacePage, MytradeshowsPage, MyseminarPage, TutorialPage, AboutusPage];
+            var classcomps = [HomePage, TradeshowsPage, MarketplacePage, SeminarPage, TutorialPage, AboutusPage];
             var j = 0;
             var count;
 

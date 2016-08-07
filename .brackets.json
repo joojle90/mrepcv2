@@ -1,6 +1,7 @@
 {
     "jscodehints.detectedExclusions": [
         "/Users/Joel/Documents/Mobile/Development/github/mrepc/app/pages/byproduct/byproduct.js",
-        "/Users/Joel/Documents/Mobile/Development/github/mrepc/app/pages/tutorial/tutorial.js"
+        "/Users/Joel/Documents/Mobile/Development/github/mrepc/app/pages/tutorial/tutorial.js",
+        "/Users/Joel/Documents/Mobile/Development/github/mrepc/platforms/android/build/intermediates/assets/debug/www/cordova-js-src/plugin/android/app.js"
     ]
 }

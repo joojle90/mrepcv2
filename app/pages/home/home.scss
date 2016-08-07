@@ -1,4 +1,5 @@
 .home {
+    font-family: 'BariolRegular';
     .events {
         position: relative;
         text-align: center !important;
@@ -13,7 +14,7 @@
         width: 100%;
 
         img {
-            filter: brightness(45%);
+            filter: brightness(80%);
         }
         p.events-title {
             position: absolute;
@@ -23,7 +24,6 @@
             font-weight: bold;
             color: white !important;
             text-transform: uppercase;
-            font-family: monospace;
         }
         p.events-subtitle {
             font-size: 1.0em;
@@ -47,11 +47,11 @@
 }
 
 .toolbar-background {
-    background: black !important;
+    background: #737272 !important;
 }
 
 .bar-button-default, .toolbar-title {
-    color: #f9eb13 !important;
+    color: #66ff2b !important;
 }
 
 .home-page .toolbar-title {

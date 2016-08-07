@@ -4,7 +4,7 @@
     }
     tabbar {
         line-height: 30px;
-        background: black;
+        background: #737272;
 
         .tab-button[aria-selected=true] {
             color: #32db64;
@@ -17,7 +17,7 @@
         display: none;
     }
     .tab-button {
-        color: yellow;
+        color: #66ff2b;
     }
 }
 

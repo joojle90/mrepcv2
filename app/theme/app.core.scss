@@ -26,3 +26,9 @@
 @import "../pages/bysupplierdetails/bysupplierdetails";
 @import "../pages/mytradeshows/mytradeshows";
 @import "../pages/myseminar/myseminar";
+
+@font-face {
+	font-family: 'BariolRegular';
+	src: url('../../myfont/BariolRegular.eot');
+	src: local('BariolRegular'), url('../../myfont/BariolRegular.woff') format('woff'), url('../../myfont/BariolRegular.ttf') format('truetype');
+}

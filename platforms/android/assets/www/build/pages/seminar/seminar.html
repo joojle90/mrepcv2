@@ -13,29 +13,31 @@
 
 <ion-content class="seminar">
     <ion-card class="adv-map" *ngFor="let sml of seminarlist; let i = index">
-        <div style="position: relative">
+        <a style="position: relative" (click)="seminardetail(seminarlist[i])">
             <img [src]="seminarlist[i].image">
+<!--
             <button fab fab-right fab-top class="fab-map" (click)="seminardetail(seminarlist[i])">
                 <ion-icon name='paper'></ion-icon>
             </button>
-        </div>
+-->
+        </a>
         <ion-item>
-            <ion-icon subtle secondary large item-left name='globe'></ion-icon>
+            <ion-icon subtle iconcolor large item-left name='globe'></ion-icon>
             <h1>{{sml.eventdetail[0].name}}</h1>
         </ion-item>
         <span style="padding-left: 50px">{{sml.eventdetail[0].location}}</span>
         <ion-item actions class="eventdesc">
-            <span item-left secondary class="item-bold">
+            <span item-left iconcolor class="item-bold">
                 <ion-icon name="time" item-left></ion-icon>
                 <span>{{sml.eventdetail[0].startdate}} - {{sml.eventdetail[0].enddate}}</span>
             </span>
             <span item-left style="margin-right: 15px;">{{sml.location}}</span>
-            <span item-left secondary class="item-bold">
+            <span item-left iconcolor class="item-bold">
                 <ion-icon name="people" item-left></ion-icon>
                 <span>{{sml.eventdetail[0].visitor}}</span>
             </span>
             <span item-left style="margin-right: 15px;">{{sml.visitor}}</span>
-            <button secondary clear item-right>
+            <button iconcolor clear item-right>
                 <ion-icon name='navigate'></ion-icon>
             </button>
         </ion-item>

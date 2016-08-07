@@ -1,6 +1,6 @@
 {
     "leftsidemenu": [{
-        "name": "Main",
+        "name": "Main Menu",
         "submenu": [{
             "idmenu": 1,
             "title": "Home",
@@ -17,57 +17,23 @@
             "title": "Online Marketplace",
             "component": "MarketplacePage",
             "icon": "podium"
-    }],
-        "subnameid": ["1", "2", "3"]
-  }, {
-        "name": "Featured",
-        "submenu": [{
-            "idmenu": 4,
-            "title": "My Tradeshows",
-            "component": "SeminarPage",
-            "icon": "aperture",
-            "notif": 3
     }, {
-            "idmenu": 5,
-            "title": "My Seminar",
-            "component": "EventsPage",
+            "idmenu": 4,
+            "title": "Seminar",
+            "component": "SeminarPage",
             "icon": "calendar",
             "notif": 2
-    }],
-        "subnameid": ["3", "4", "5"]
-  }, {
-        "name": "Misc",
-        "submenu": [{
-            "idmenu": 6,
+    },{
+            "idmenu": 5,
             "title": "Tutorial",
             "component": "TutorialPage",
             "icon": "book"
     }, {
-            "idmenu": 7,
-            "title": "About Us",
+            "idmenu": 6,
+            "title": "About MREPC",
             "component": "AboutPage",
             "icon": "people"
-    }],
-        "subnameid": ["6", "7"]
-  }],
-
-
-    "tabcontent": [{
-        "tabroot": "tab1Root",
-        "tabtitle": "Now",
-        "tabicon": "social-youtube"
-  }, {
-        "tabroot": "tab2Root",
-        "tabtitle": "Tophits",
-        "tabicon": "film-marker"
-  }, {
-        "tabroot": "tab3Root",
-        "tabtitle": "Review",
-        "tabicon": "chatbubbles"
-  }, {
-        "tabroot": "tab4Root",
-        "tabtitle": "Setting",
-        "tabicon": "gear-a"
+    }]
   }],
 
 

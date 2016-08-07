@@ -1,19 +1,18 @@
 <!-- left menu -->
 <ion-menu [content]="content">
-
     <ion-toolbar secondary class="mysidemenu">
-        <ion-title><img src="img/mrepcimage/mrepclogo.png"></ion-title>
+        <img src="img/mrepcimage/defaultuser.png" class="user-profile">
+<!--        <ion-title>Main Menu</ion-title>-->
+            <ion-tabs>
+                <ion-tab tabTitle="My Event" [root]="tab1Root" tabIcon="bookmark"></ion-tab>
+                <ion-tab tabTitle="My Seminar" [root]="tab2Root" tabIcon="mail"></ion-tab>
+            </ion-tabs>
     </ion-toolbar>
 
-    <ion-content>
-<ion-list>
-        <ion-tabs class="marketplace">
-            <ion-tab [root]="tab1Root" tabIcon="briefcase"></ion-tab>
-            <ion-tab [root]="tab2Root" tabIcon="people"></ion-tab>
-        </ion-tabs>
-    </ion-list>
+    <ion-content class="mysidemenu">
+        <br><br>
         <ion-list *ngFor="let lsm of leftsidemenu; let j = index;">
-            <ion-list-header>{{lsm.name}}</ion-list-header>
+<!--            <ion-list-header>{{lsm.name}}</ion-list-header>-->
             <button ion-item menuClose *ngFor="let sm of lsm.submenu; let i = index;" (click)="openPage(sm.idmenu)">
                 <ion-icon iconcolor item-left [name]="sm.icon"></ion-icon>
                 {{sm.title}}

@@ -13,29 +13,34 @@
 
 <ion-content class="mytradeshows">
     <ion-card class="adv-map" *ngFor="let mytl of mytradeshowslist; let i = index">
+        <a style="position: relative" (click)="mytradeshowsdetail(mytradeshowslist[i])">
+            <img [src]="mytradeshowslist[i].image">
+        </a>
+<!--
         <div style="position: relative">
             <img [src]="mytradeshowslist[i].image">
             <button fab fab-right fab-top class="fab-map" (click)="mytradeshowsdetail(mytradeshowslist[i])">
                 <ion-icon name='paper'></ion-icon>
             </button>
         </div>
+-->
         <ion-item>
-            <ion-icon subtle secondary large item-left name='globe'></ion-icon>
+            <ion-icon subtle iconColor large item-left name='globe'></ion-icon>
             <h1>{{mytl.eventdetail[0].name}}</h1>
         </ion-item>
         <span style="padding-left: 50px">{{mytl.eventdetail[0].location}}</span>
         <ion-item actions class="eventdesc">
-            <span item-left secondary class="item-bold">
+            <span item-left iconColor class="item-bold">
                 <ion-icon name="time" item-left></ion-icon>
                 <span>{{mytl.eventdetail[0].startdate}} - {{mytl.eventdetail[0].enddate}}</span>
             </span>
             <span item-left style="margin-right: 15px;">{{mytl.location}}</span>
-            <span item-left secondary class="item-bold">
+            <span item-left iconColor class="item-bold">
                 <ion-icon name="people" item-left></ion-icon>
                 <span>{{mytl.eventdetail[0].visitor}}</span>
             </span>
             <span item-left style="margin-right: 15px;">{{mytl.visitor}}</span>
-            <button secondary clear item-right>
+            <button iconColor clear item-right>
                 <ion-icon name='navigate'></ion-icon>
             </button>
         </ion-item>

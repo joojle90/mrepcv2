@@ -4643,7 +4643,7 @@ em[iconcolor],
 sub[iconcolor],
 sup[iconcolor],
 ion-icon[iconcolor] {
-  color: #387ef5; }
+  color: #2ba70f; }
 
 ion-action-sheet {
   position: absolute;
@@ -5043,7 +5043,7 @@ ion-badge {
 
 .badge-iconcolor {
   color: #fff;
-  background-color: #387ef5; }
+  background-color: #2ba70f; }
 
 .button {
   -webkit-user-select: none;
@@ -5375,26 +5375,26 @@ ion-button-effect {
 
 .button-iconcolor {
   color: #fff;
-  background-color: #387ef5; }
+  background-color: #2ba70f; }
   .button-iconcolor.activated {
-    background-color: #3474e1; }
+    background-color: #3cae22; }
 
 .button-outline-iconcolor {
-  border-color: #387ef5;
-  color: #387ef5;
+  border-color: #2ba70f;
+  color: #2ba70f;
   background-color: transparent; }
   .button-outline-iconcolor.activated {
     color: #fff;
-    background-color: #387ef5; }
+    background-color: #2ba70f; }
 
 .button-clear-iconcolor {
   border-color: transparent;
-  color: #387ef5;
+  color: #2ba70f;
   background-color: transparent; }
   .button-clear-iconcolor.activated {
     opacity: .4; }
   .button-clear-iconcolor:hover:not(.disable-hover) {
-    color: #387ef5; }
+    color: #2ba70f; }
 
 .button-fab {
   position: absolute;
@@ -5627,8 +5627,8 @@ ion-checkbox[pink] .checkbox-checked {
     border-color: #fff; }
 
 ion-checkbox[iconcolor] .checkbox-checked {
-  border-color: #387ef5;
-  background-color: #387ef5; }
+  border-color: #2ba70f;
+  background-color: #2ba70f; }
   ion-checkbox[iconcolor] .checkbox-checked .checkbox-inner {
     border-color: #fff; }
 
@@ -5719,7 +5719,7 @@ ion-chip ion-icon[pink] {
 
 ion-chip ion-icon[iconcolor] {
   color: #fff;
-  background-color: #387ef5; }
+  background-color: #2ba70f; }
 
 [no-padding],
 [no-padding] scroll-content {
@@ -6318,7 +6318,7 @@ ion-item-divider[pink] {
 
 ion-item-divider[iconcolor] {
   color: #fff;
-  background-color: #387ef5; }
+  background-color: #2ba70f; }
 
 ion-item-sliding {
   background-color: #fff; }
@@ -6449,7 +6449,7 @@ ion-label[pink] {
   color: #d03e84; }
 
 ion-label[iconcolor] {
-  color: #387ef5; }
+  color: #2ba70f; }
 
 ion-list-header {
   display: block;
@@ -6960,9 +6960,9 @@ ion-radio[pink] .radio-checked {
     border-color: #d03e84; }
 
 ion-radio[iconcolor] .radio-checked {
-  color: #387ef5; }
+  color: #2ba70f; }
   ion-radio[iconcolor] .radio-checked .radio-inner {
-    border-color: #387ef5; }
+    border-color: #2ba70f; }
 
 ion-searchbar {
   position: relative;
@@ -7168,9 +7168,9 @@ ion-searchbar[pink] .searchbar-ios-cancel {
   color: #fff; }
 
 ion-searchbar[iconcolor] .searchbar-ios-cancel {
-  color: #387ef5; }
+  color: #2ba70f; }
   ion-searchbar[iconcolor] .searchbar-ios-cancel:hover:not(.disable-hover) {
-    color: #3474e1; }
+    color: #3cae22; }
 
 .toolbar[iconcolor] ion-searchbar .searchbar-ios-cancel {
   color: #fff; }
@@ -7403,21 +7403,21 @@ ion-segment[pink] .segment-button-disabled {
   color: #d03e84; }
 
 ion-segment[iconcolor] .segment-button {
-  border-color: #387ef5;
-  color: #387ef5; }
+  border-color: #2ba70f;
+  color: #2ba70f; }
   ion-segment[iconcolor] .segment-button:hover:not(.segment-activated) {
-    background-color: rgba(56, 126, 245, 0.1); }
+    background-color: rgba(43, 167, 15, 0.1); }
   ion-segment[iconcolor] .segment-button:active:not(.segment-activated) {
-    background-color: rgba(56, 126, 245, 0.16); }
+    background-color: rgba(43, 167, 15, 0.16); }
   ion-segment[iconcolor] .segment-button.segment-activated {
     color: #fff;
-    background-color: #387ef5; }
+    background-color: #2ba70f; }
 
 ion-segment[iconcolor] .segment-button-disabled {
-  color: rgba(56, 126, 245, 0.3); }
+  color: rgba(43, 167, 15, 0.3); }
 
 .toolbar[iconcolor] .segment-button.segment-activated {
-  color: #387ef5; }
+  color: #2ba70f; }
 
 ion-select {
   display: -webkit-box;
@@ -7803,8 +7803,8 @@ ion-tabs[pink] tabbar {
     color: #fff; }
 
 ion-tabs[iconcolor] tabbar {
-  border-color: #0c60ee;
-  background-color: #387ef5; }
+  border-color: #1f780b;
+  background-color: #2ba70f; }
   ion-tabs[iconcolor] tabbar .tab-button {
     color: #fff; }
   ion-tabs[iconcolor] tabbar .tab-button:hover:not(.disable-hover),
@@ -7916,7 +7916,7 @@ ion-toggle[pink] .toggle-checked {
   background-color: #d03e84; }
 
 ion-toggle[iconcolor] .toggle-checked {
-  background-color: #387ef5; }
+  background-color: #2ba70f; }
 
 ion-toast {
   position: absolute;
@@ -8579,35 +8579,35 @@ ion-buttons[right] {
     background-color: #bf3979; }
 
 .toolbar[iconcolor] .toolbar-background {
-  border-color: #0c60ee;
-  background: #387ef5; }
+  border-color: #1f780b;
+  background: #2ba70f; }
 
 .toolbar[iconcolor] .toolbar-title,
 .toolbar[iconcolor] .bar-button-default {
   color: #fff; }
 
 .bar-button-iconcolor {
-  color: #387ef5;
+  color: #2ba70f;
   background-color: transparent; }
   .bar-button-iconcolor:hover:not(.disable-hover) {
-    color: #387ef5; }
+    color: #2ba70f; }
   .bar-button-iconcolor.activated {
     opacity: .4; }
 
 .bar-button-outline-iconcolor {
-  border-color: #3474e1;
-  color: #3474e1;
+  border-color: #3cae22;
+  color: #3cae22;
   background-color: transparent; }
   .bar-button-outline-iconcolor.activated {
     color: #fff;
-    background-color: #3474e1; }
+    background-color: #3cae22; }
 
 .bar-button-solid-iconcolor {
   color: #fff;
-  background-color: #387ef5; }
+  background-color: #2ba70f; }
   .bar-button-solid-iconcolor.activated {
     color: #fff;
-    background-color: #3474e1; }
+    background-color: #3cae22; }
 
 ion-navbar-section.statusbar-padding {
   height: calc(44px + 20px);
@@ -8676,13 +8676,57 @@ body {
   background-color: #fff; }
 
 .mysidemenu {
-  min-height: 79px;
+  font-family: 'BariolRegular';
+  min-height: 200px;
   text-align: center; }
   .mysidemenu .toolbar-title {
-    color: #338801 !important; }
+    color: white !important; }
+  .mysidemenu .toolbar-content {
+    margin-bottom: auto;
+    margin-top: 10px; }
+  .mysidemenu .user-profile {
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 50%; }
+  .mysidemenu ion-label {
+    font-size: large; }
+  .mysidemenu .tab-button {
+    opacity: 1; }
+  .mysidemenu .item-inner {
+    min-height: 65px; }
+  .mysidemenu .item {
+    background-color: #ddd; }
+  .mysidemenu ion-list {
+    margin-bottom: 65px; }
+  .mysidemenu ion-tabs[tabbarPlacement=top] tabbar {
+    border-bottom: 0; }
+  .mysidemenu tabbar {
+    line-height: 30px;
+    background: #737272; }
+    .mysidemenu tabbar .tab-button[aria-selected=true] {
+      color: #32db64; }
+    .mysidemenu tabbar a {
+      padding-top: 15px; }
+  .mysidemenu ion-navbar-section {
+    display: none; }
+  .mysidemenu ion-tabbar-section {
+    margin-top: 120px; }
+  .mysidemenu .tab-button {
+    color: #66ff2b; }
+  .mysidemenu .tab-button.icon-only {
+    padding: 30px 10px; }
+  .mysidemenu .tab-button-text {
+    color: white;
+    font-weight: bold;
+    font-size: 15px; }
 
 .md img {
   text-align: center; }
+
+ion-content {
+  background-color: #ddd; }
 
 .tabs tabbar {
   line-height: 30px; }
@@ -8709,7 +8753,7 @@ body {
   .eventdetail ion-row ion-col {
     padding: 0; }
     .eventdetail ion-row ion-col ion-icon {
-      color: #d03e84;
+      color: #387ef5;
       margin-right: 10px; }
 
 .action-sheet-group button.action-sheet-button {
@@ -8797,50 +8841,49 @@ body {
 .myseminar .item-inner {
   margin-left: 5px !important; }
 
-.home .events {
-  position: relative;
-  text-align: center !important;
-  height: 30%; }
-  .home .events .slide-title {
-    top: 37%; }
-
-.home ion-card {
-  margin: 3px 10px 3px 0px;
-  width: 100%; }
-  .home ion-card img {
-    -webkit-filter: brightness(45%);
-    filter: brightness(45%); }
-  .home ion-card p.events-title {
-    position: absolute;
-    top: 40%;
-    font-size: 32px;
-    width: 100%;
-    font-weight: bold;
-    color: white !important;
-    text-transform: uppercase;
-    font-family: monospace; }
-  .home ion-card p.events-subtitle {
-    font-size: 1.0em;
-    position: absolute;
-    top: 60%;
-    width: 100%;
-    font-weight: bold;
-    color: #FFF23D !important; }
-  .home ion-card button.events-details {
-    position: absolute;
-    bottom: 0;
-    font-size: 0.8em;
-    width: 25%;
-    right: 0.4em; }
-
-.home .swiper-pagination-bullet {
-  background: white; }
+.home {
+  font-family: 'BariolRegular'; }
+  .home .events {
+    position: relative;
+    text-align: center !important;
+    height: 30%; }
+    .home .events .slide-title {
+      top: 37%; }
+  .home ion-card {
+    margin: 3px 10px 3px 0px;
+    width: 100%; }
+    .home ion-card img {
+      -webkit-filter: brightness(80%);
+      filter: brightness(80%); }
+    .home ion-card p.events-title {
+      position: absolute;
+      top: 40%;
+      font-size: 32px;
+      width: 100%;
+      font-weight: bold;
+      color: white !important;
+      text-transform: uppercase; }
+    .home ion-card p.events-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 60%;
+      width: 100%;
+      font-weight: bold;
+      color: #FFF23D !important; }
+    .home ion-card button.events-details {
+      position: absolute;
+      bottom: 0;
+      font-size: 0.8em;
+      width: 25%;
+      right: 0.4em; }
+  .home .swiper-pagination-bullet {
+    background: white; }
 
 .toolbar-background {
-  background: black !important; }
+  background: #737272 !important; }
 
 .bar-button-default, .toolbar-title {
-  color: #f9eb13 !important; }
+  color: #66ff2b !important; }
 
 .home-page .toolbar-title {
   text-align: center; }
@@ -8884,7 +8927,7 @@ body {
 
 .marketplace tabbar {
   line-height: 30px;
-  background: black; }
+  background: #737272; }
   .marketplace tabbar .tab-button[aria-selected=true] {
     color: #32db64; }
   .marketplace tabbar a {
@@ -8894,7 +8937,7 @@ body {
   display: none; }
 
 .marketplace .tab-button {
-  color: yellow; }
+  color: #66ff2b; }
 
 .marketplace-page ion-searchbar {
   padding: 0; }
@@ -9003,3 +9046,8 @@ body {
 
 .myseminar .item-inner {
   margin-left: 5px !important; }
+
+@font-face {
+  font-family: 'BariolRegular';
+  src: url("../../myfont/BariolRegular.eot");
+  src: local("BariolRegular"), url("../../myfont/BariolRegular.woff") format("woff"), url("../../myfont/BariolRegular.ttf") format("truetype"); }

@@ -1,9 +1,78 @@
 .mysidemenu {
-    min-height: 79px;
+    font-family: 'BariolRegular';
+    min-height: 200px;
     text-align: center;
 
     .toolbar-title {
-        color: #338801 !important;
+        color: white !important;
+    }
+
+    .toolbar-content {
+        margin-bottom: auto;
+        margin-top: 10px;
+    }
+
+    .user-profile {
+        height: 100px;
+        width: 100px;
+        border: 2px solid white;
+        padding: 20px;
+        border-radius: 50%;
+    }
+
+    ion-label {
+        font-size: large;
+    }
+
+    .tab-button {
+        opacity: 1;
+    }
+
+    .item-inner {
+        min-height: 65px;
+    }
+
+    .item {
+        background-color: #ddd;
+    }
+
+    ion-list {
+        margin-bottom: 65px;
+    }
+
+
+    ion-tabs[tabbarPlacement=top] tabbar {
+        border-bottom: 0;
+    }
+    tabbar {
+        line-height: 30px;
+        background: #737272;
+
+        .tab-button[aria-selected=true] {
+            color: #32db64;
+        }
+        a {
+            padding-top: 15px;
+        }
+    }
+    ion-navbar-section {
+        display: none;
+    }
+    ion-tabbar-section {
+        margin-top: 120px;
+    }
+    .tab-button {
+        color: #66ff2b;
+    }
+
+    .tab-button.icon-only {
+        padding: 30px 10px;
+    }
+
+    .tab-button-text {
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
     }
 }
 
@@ -11,4 +80,8 @@
     img {
         text-align: center;
     }
+}
+
+ion-content {
+    background-color: #ddd;
 }

@@ -98,6 +98,7 @@ var MrepcApp = (_dec = (0, _ionicAngular.App)({
         this.updateleftsidemenu();
 
         this.platform.ready().then(function () {
+            _this.hideSplashScreen();
             _ionicNative.StatusBar.styleDefault();
             document.addEventListener("backbutton", function () {
 
@@ -111,6 +112,15 @@ var MrepcApp = (_dec = (0, _ionicAngular.App)({
     }
 
     _createClass(MrepcApp, [{
+        key: 'hideSplashScreen',
+        value: function hideSplashScreen() {
+            if (_ionicNative.Splashscreen) {
+                setTimeout(function () {
+                    _ionicNative.Splashscreen.hide();
+                }, 100);
+            }
+        }
+    }, {
         key: 'updateleftsidemenu',
         value: function updateleftsidemenu() {
             var _this2 = this;
